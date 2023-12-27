@@ -1,0 +1,22 @@
+Install Nuclei
+
+Download golang 
+wget https://go.dev/dl/go1.20.12.linux-amd64.tar.gz
+wget https://go.dev/dl/go1.20.12.linux-amd64.tar.gz
+tar -xvf go1.20.12.linux-amd64.tar.gz
+--------------------------------------------------------------------
+sudo mv go /usr/local/
+cd /usr/local/
+nano /home/parrot/.profile
+export PATH=$PATH:/usr/local/go/bin
+go version
+
+--------------------------------------------------------------------
+git clone https://github.com/projectdiscovery/nuclei.git
+
+go install -v github.com/projectdiscovery/nuclei/cmd/nuclei@latest
+
+go install -v github.com/projectdiscovery/nuclei/v2/cmd/nuclei@latest
+
+
+---------------------------------------------------------------
